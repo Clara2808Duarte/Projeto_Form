@@ -1,8 +1,8 @@
-import Nav from "./Components/Navbar";
 import Footer from "../Components/Footer";
 import Temaki from "../assets/Temaki.jpeg";
 import SobreMesa from "../assets/Doces.png";
 import ItensAdicionais from "../assets/itens.jpg";
+import Nav from "../Components/NavBar"
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
       <section>
         <Nav />
       </section>
-      <Carrosel />
+      {/* <Carrosel /> */}
       <br />
       <br />
       <br />
