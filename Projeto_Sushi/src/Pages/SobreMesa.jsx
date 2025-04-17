@@ -55,6 +55,7 @@ function Sobremesas() {
   }, []);
 
   return (
+    <>
     <div className="promo-container">
       <NavBar />
       <h1>SOBREMESAS JAPONESAS</h1>
@@ -73,6 +74,8 @@ function Sobremesas() {
         ))}
       </div>
     </div>
+    <Footer/>
+   </>
   );
 }
 
