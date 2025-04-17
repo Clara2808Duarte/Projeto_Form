@@ -103,9 +103,6 @@ function PromoSushi() {
 
               {/* Exibe o preço do combo */}
               <span className="price">{combo.price}</span>
-
-              {/* Botão que pode ser usado futuramente para adicionar ao carrinho ou mais detalhes */}
-              <button className="botao"> Clique Aqui </button>
             </div>
           ))}
         </div>

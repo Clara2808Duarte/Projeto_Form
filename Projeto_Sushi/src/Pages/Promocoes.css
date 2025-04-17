@@ -1,101 +1,86 @@
 .promo-container {
-  font-family: "Segoe UI", sans-serif;
-  padding: 2rem;
-  margin-top: 20%;
-  background-color: #fa8072;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  font-family: "Segoe UI", sans-serif; /* Define a fonte principal da promoção */
+  padding: 2rem; /* Adiciona um espaçamento interno de 2rem */
+  margin-top: 20%; /* Adiciona uma margem superior de 20% */
+  background-color: #fa8072; /* Define a cor de fundo da promoção */
+  text-align: center; /* Centraliza o texto dentro do container */
+  display: flex; /* Define o container como um flexbox */
+  flex-direction: column; /* Organiza os itens em uma coluna */
 }
 
 .promo-container h1 {
-  font-size: 2.5rem;
-  color: #0b0b0b;
-  margin-bottom: 0.3rem;
+  font-size: 2.5rem; /* Define o tamanho da fonte do título principal */
+  color: #0b0b0b; /* Define a cor do texto do título */
+  margin-bottom: 0.3rem; /* Adiciona uma margem inferior de 0.3rem */
 }
 
 .sub {
-  font-size: 1.2em;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #500707f1;
-  margin-bottom: 2rem;
+  font-size: 1.2em; /* Define o tamanho da fonte para o subtítulo */
+  font-family: Georgia, "Times New Roman", Times, serif; /* Define a fonte do subtítulo */
+  color: #500707f1; /* Define a cor do texto do subtítulo */
+  margin-bottom: 2rem; /* Adiciona uma margem inferior de 2rem */
 }
 
 .promo-grid {
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-items: center;
+  display: grid; /* Define o container como um grid */
+  gap: 2rem; /* Define o espaço entre os itens do grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Cria colunas responsivas */
+  justify-items: center; /* Centraliza os itens dentro de cada célula do grid */
 }
 
 .promo-card {
-  background: #f4cfc0;
-  width: 20vw;
-  height: 65vh;
-  border-radius: 12px;
-  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.1);
-  padding: 1.5rem;
-  max-width: 320px;
-  transition: transform 0.3s ease;
+  background: #f4cfc0; /* Define a cor de fundo do cartão promocional */
+  width: 20vw; /* Define a largura do cartão como 20% da largura da viewport */
+  height: 65vh; /* Define a altura do cartão como 65% da altura da viewport */
+  border-radius: 12px; /* Adiciona bordas arredondadas ao cartão */
+  box-shadow: 30px 30px 30px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra ao cartão */
+  padding: 1.5rem; /* Adiciona um espaçamento interno de 1.5rem */
+  max-width: 320px; /* Define uma largura máxima de 320px para o cartão */
+  transition: transform 0.3s ease; /* Define uma transição suave para transformações */
 }
 
 .promo-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-5px); /* Move o cartão para cima ao passar o mouse */
 }
 
 .image-wrapper {
-  overflow: hidden;
-  border-radius: 10px;
-  margin-bottom: 1rem;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse o contêiner */
+  border-radius: 10px; /* Adiciona bordas arredondadas ao contêiner da imagem */
+  margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem */
 }
 
 .image-wrapper img {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
-  transition: transform 0.4s ease;
+  width: 100%; /* Define a largura da imagem como 100% do contêiner */
+  height: 200px; /* Define a altura da imagem como 200px */
+  object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+  transition: transform 0.4s ease; /* Define uma transição suave para transformações na imagem */
 }
 
 .image-wrapper:hover img {
-  transform: scale(1.1);
-  filter: brightness(1.1);
+  transform: scale(1.1); /* Aumenta a imagem ao passar o mouse */
+  filter: brightness(1.1); /* Aumenta o brilho da imagem ao passar o mouse */
 }
 
 .promo-card h2 {
-  font-size: 1.4rem;
-  color: #1d3557;
-  margin-bottom: 0.5rem;
+  font-size: 1.4rem; /* Define o tamanho da fonte do título do cartão */
+  color: #1d3557; /* Define a cor do texto do título do cartão */
+  margin-bottom: 0.5rem; /* Adiciona uma margem inferior de 0.5rem */
 }
 
 .promo-card p {
-  font-size: 1rem;
-  color: #333;
-  margin-bottom: 1rem;
+  font-size: 1rem; /* Define o tamanho da fonte do parágrafo */
+  color: #333; /* Define a cor do texto do parágrafo */
+  margin-bottom: 1rem; /* Adiciona uma margem inferior de 1rem */
 }
 
 .price {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #457b9d;
-  display: block;
-  margin-bottom: 1rem;
+  font-size: 1.3rem; /* Define o tamanho da fonte do preço */
+  font-weight: bold; /* Define o texto do preço como negrito */
+  color: #457b9d; /* Define a cor do texto do preço */
+  display: block; /* Exibe o preço como um bloco */
+  margin-bottom: 1rem; 
 }
 
-.botao {
-  background-color: #e63946;
-  color: white;
-  border: none;
-  padding: 0.6rem 1.2rem;
-  font-size: 1rem;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  margin-top: 200%;
-}
-
-.botao:hover {
-  background-color: #b6202f;
-}
 
 h1 {
   color: whitesmoke;
