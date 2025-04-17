@@ -10,3 +10,8 @@
     position: relative; /* Permite que o footer fique onde o conteúdo termina */
   }
   
+  .ImgCollab {
+    width: 15vw;
+    height: 25vh;
+    margin-left: 37%;
+  }
