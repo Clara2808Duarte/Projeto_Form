@@ -36,8 +36,10 @@ function Carrosel() {
           <img key={index} src={slide} alt={`Imagem ${index + 1}`} />
         ))}
       </section>
+      
       <button className="prev" onClick={() => moveSlide(-1)}>&#10094;</button>
       <button className="next" onClick={() => moveSlide(1)}>&#10095;</button>
+     
     </section>
   );
 }

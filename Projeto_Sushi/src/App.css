@@ -29,7 +29,7 @@ body {
 
 /* Estiliza os links dentro da navbar */
 .navbar a {
-  color: white; /* Cor branca para os links */
+  color: black; /* Cor branca para os links */
   text-decoration: none; /* Remove sublinhado */
   font-weight: bold; /* Texto em negrito */
   padding: 0.5rem 1rem; /* Espaço ao redor dos links */
@@ -39,7 +39,7 @@ body {
 
 /* Estiliza o hover nos links da navbar */
 .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Fundo escuro semi-transparente ao passar o mouse */
+  background-color: rgb(255, 255, 255); /* Fundo escuro semi-transparente ao passar o mouse */
 }
 
 /* Define a lista de links como horizontal */
