@@ -1,13 +1,4 @@
-/* Home.css */
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #fefefe;
-    color: #333;
-    margin: 0;
-    padding: 0;
-  }
-  
   section {
     padding: 2rem;
     text-align: center;
@@ -16,7 +7,7 @@ body {
   }
   
   h3 {
-    color: #c62828;
+    color: #fa8072;
     font-size: 1.8rem;
     margin-bottom: 1rem;
   }
