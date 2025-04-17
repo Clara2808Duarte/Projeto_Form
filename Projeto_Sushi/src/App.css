@@ -121,16 +121,6 @@ body {
   accent-color: #fa8072; /* Cor salmão personalizada */
 }
 
-.footer {
-  background-color: #fa8072; /* Fundo salmão para combinar com o tema */
-  text-align: center; /* Centraliza o texto */
-  padding: 1rem; /* Espaçamento interno para conforto visual */
-  font-weight: bold; /* Texto em negrito para destaque */
-  color: #fff; /* Texto branco para contraste */
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.6); /* Sombra para cima, dando destaque */
-  position: relative; /* Permite que o footer fique onde o conteúdo termina */
-}
-
 .botao-enviar2 {
   display: block; /* Garante que o botão fique como um bloco */
   margin: 2rem auto 0; /* Dá um bom espaço em cima e centraliza */
