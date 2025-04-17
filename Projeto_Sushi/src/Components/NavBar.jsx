@@ -1,8 +1,12 @@
-
+import Logo from '../assets/Urban.png'
+import './NavBar.css'
 
 function Nav() {
   return (
     <nav className="navbar">
+      <a>
+      <img className="ImgLogo" src={Logo} alt="Logo" />
+      </a>
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/temaki">Temaki</a></li>
