@@ -1,20 +1,29 @@
+// Importa o componente de navegação (menu superior)
 import NavBar from '../Components/NavBar'
+
+// Importa o React e os hooks useEffect e useState para usar estado e efeitos colaterais
 import React, { useEffect, useState } from 'react';
+
+// Importa o arquivo CSS responsável pelo estilo desta página
 import './Promocoes.css';
+
+// Importa as imagens usadas nas promoções
 import Barca from '../assets/Barca_Img.png'
 import Temaki from '../assets/Tekmaki_Img.png'
 import Combo from '../assets/Combo_Img.png'
 import ComboP from '../assets/ComboPremium_Img.png'
+
+// Importa o componente de rodapé da página
 import Footer from '../Components/Footer'
 
-
+// Array com os dados das promoções disponíveis
 const promoData = [
   {
-    id: 1,
-    title: 'Combo Clássico',
-    description: '10 sashimis, 8 uramakis, 1 temaki de salmão',
-    price: 'R$ 59,90',
-    image: [
+    id: 1, // ID único da promoção
+    title: 'Combo Clássico', // Título do combo
+    description: '10 sashimis, 8 uramakis, 1 temaki de salmão', // Descrição do combo
+    price: 'R$ 59,90', // Preço do combo
+    image: [ // Imagem do combo (como array)
         Combo
     ]
   },
@@ -47,39 +56,66 @@ const promoData = [
   }
 ];
 
+// Declaração do componente funcional PromoSushi
 function PromoSushi() {
+  // Cria um estado para armazenar os combos (inicialmente vazio)
   const [combos, setCombos] = useState([]);
 
+  // useEffect executa uma ação quando o componente é montado
   useEffect(() => {
-    // Simula carregamento de dados (como se fosse de uma API)
+    // Simula um carregamento de dados, como se viesse de uma API
     setTimeout(() => {
-      setCombos(promoData);
-    }, 500);
-  }, []);
+      setCombos(promoData); // Depois de 500ms, define os combos com os dados simulados
+    }, 500); // Tempo de atraso: 0,5 segundos
+  }, []); // Array vazio garante que execute apenas uma vez
 
-    return (
+  // Retorna o que será exibido na tela (JSX)
+  return (
     <>
-    <div className="promo-container">
-         <NavBar />
-      <h1>🍣 PROMOÇÕES ESPECIAIS</h1>
-      <p className="sub">Combos irresistíveis de sushi e temaki pra você!</p>
+      {/* Container principal da página de promoções */}
+      <div className="promo-container">
+        {/* Exibe a barra de navegação no topo */}
+        <NavBar />
 
-      <div className="promo-grid">
-        {combos.map(combo => (
-          <div key={combo.id} className="promo-card">
-            <div className="image-wrapper">
-              <img src={combo.image} alt={combo.title} />
+        {/* Título principal da página */}
+        <h1>🍣 PROMOÇÕES ESPECIAIS</h1>
+
+        {/* Subtítulo */}
+        <p className="sub">Combos irresistíveis de sushi e temaki pra você!</p>
+
+        {/* Grade de promoções, exibindo os cards */}
+        <div className="promo-grid">
+          {/* Mapeia cada combo para criar um card na tela */}
+          {combos.map(combo => (
+            // Cada card precisa de uma key única (o id)
+            <div key={combo.id} className="promo-card">
+              {/* Container para a imagem do combo */}
+              <div className="image-wrapper">
+                {/* Exibe a imagem do combo */}
+                <img src={combo.image} alt={combo.title} />
+              </div>
+
+              {/* Exibe o título do combo */}
+              <h2>{combo.title}</h2>
+
+              {/* Exibe a descrição do combo */}
+              <p>{combo.description}</p>
+
+              {/* Exibe o preço do combo */}
+              <span className="price">{combo.price}</span>
+
+              {/* Botão que pode ser usado futuramente para adicionar ao carrinho ou mais detalhes */}
+              <button className="botao"> Clique Aqui </button>
             </div>
-            <h2>{combo.title}</h2>
-            <p>{combo.description}</p>
-            <span className="price">{combo.price}</span>
-            <button className="botao"> Clique Aqui </button>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
-    <Footer />
+
+      {/* Exibe o rodapé da página */}
+      <Footer />
     </>
   );
 }
+
+// Exporta o componente para que possa ser usado em outras partes do site
 export default PromoSushi
