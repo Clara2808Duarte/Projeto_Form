@@ -4,6 +4,7 @@ import Mochi from '../assets/Mochi.png'
 import Dorayaki from '../assets/Dorayaki.png'
 import Sorvete from '../assets/Sorvete.png'
 import Anmitsu from '../assets/Anmitsu.png'
+import Footer from '../Components/Footer'
 
 const sobremesasData = [
   {
