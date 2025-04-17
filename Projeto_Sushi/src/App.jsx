@@ -6,6 +6,7 @@ import ItensAdiconais from './Pages/ItensAdicionais';
 import Combo from './Pages/Combo';
 import Promocoes from './Pages/Promocoes'
 import Finalizar from './Pages/FormularioFinal'
+import "./App.css"
 
 
 function App() {
