@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import NavBar from '../Components/NavBar';
 import Mochi from '../assets/Mochi.png'
 import Dorayaki from '../assets/Dorayaki.png'
+import Sorvete from '../assets/Sorvete.png'
+import Anmitsu from '../assets/Anmitsu.png'
 
 const sobremesasData = [
   {
@@ -27,14 +29,18 @@ const sobremesasData = [
     title: 'Sorvete de Matcha',
     description: 'Sorvete cremoso de chá verde japonês, levemente adocicado.',
     price: 'R$ 9,90',
-    image: '/images/matcha-sorvete.jpg',
+    image: [
+      Sorvete
+    ]
   },
   {
     id: 4,
     title: 'Anmitsu',
     description: 'Sobremesa tradicional com gelatina de ágar-ágar, frutas e calda doce de açúcar mascavo.',
     price: 'R$ 13,90',
-    image: '/images/anmitsu.jpg',
+    image: [
+      Anmitsu
+    ]
   }
 ];
 
@@ -52,7 +58,7 @@ function Sobremesas() {
     <>
     <div className="promo-container">
       <NavBar />
-      <h1>Sobremesas Japonesas</h1>
+      <h1>SOBREMESAS JAPONESAS</h1>
       <p className="sub">Delícias doces para fechar sua refeição com chave de ouro!</p>
 
       <div className="promo-grid">

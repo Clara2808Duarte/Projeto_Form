@@ -121,11 +121,7 @@ body {
   accent-color: #fa8072; /* Cor salmão personalizada */
 }
 
-
-
-
 .footer {
-  width: 100%; /* Garante que o footer ocupe toda a largura da tela */
   background-color: #fa8072; /* Fundo salmão para combinar com o tema */
   text-align: center; /* Centraliza o texto */
   padding: 1rem; /* Espaçamento interno para conforto visual */
@@ -133,6 +129,28 @@ body {
   color: #fff; /* Texto branco para contraste */
   box-shadow: 0 -2px 10px rgba(0,0,0,0.6); /* Sombra para cima, dando destaque */
   position: relative; /* Permite que o footer fique onde o conteúdo termina */
-  bottom: 0; /* Sem efeito visual aqui, só por clareza */
-  left: 0; /* Alinha à esquerda da tela */
 }
+
+.botao-enviar2 {
+  display: block; /* Garante que o botão fique como um bloco */
+  margin: 2rem auto 0; /* Dá um bom espaço em cima e centraliza */
+  padding: 0.75rem 1.5rem;
+  background-color: #fa8072;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 30px;
+  transition: background-color 0.2s;
+  font-size: 1rem;
+  position: relative; /* Garante que ele se posicione corretamente */
+  z-index: 1; /* Evita sobreposição */
+}
+
+
+
+.botao-enviar2:hover {
+  background-color: #e96e60; /* Um tom um pouco mais escuro no hover */
+}
+
+

@@ -57,7 +57,8 @@ function PromoSushi() {
     }, 500);
   }, []);
 
-        return (
+    return (
+    <>
     <div className="promo-container">
          <NavBar />
       <h1>🍣 PROMOÇÕES ESPECIAIS</h1>
@@ -76,8 +77,9 @@ function PromoSushi() {
           </div>
         ))}
       </div>
-      <Footer />
     </div>
+    <Footer />
+    </>
   );
 }
 export default PromoSushi
