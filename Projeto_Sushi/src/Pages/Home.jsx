@@ -1,4 +1,4 @@
-import Nav from "./Components/Navbar";
+import Nav from "./Components/NavBar";
 import Footer from "../Components/Footer";
 import Temaki from "../assets/Temaki.jpeg";
 import SobreMesa from "../assets/Doces.png";
