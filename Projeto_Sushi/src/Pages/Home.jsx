@@ -3,6 +3,7 @@ import Temaki from "../assets/Temaki.jpeg";
 import SobreMesa from "../assets/Doces.png";
 import ItensAdicionais from "../assets/itens.jpg";
 import Nav from "../Components/NavBar"
+import Carrosel from "../Components/Carrosel";
 import './Home.css';
 
 function Home() {
@@ -11,7 +12,7 @@ function Home() {
       <section>
         <Nav />
       </section>
-      {/* <Carrosel /> */}
+      <Carrosel />
       <br />
       <br />
       <br />
