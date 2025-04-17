@@ -1,5 +1,3 @@
-// import './Navbar.css';
-
 
 function Nav() {
   return (
