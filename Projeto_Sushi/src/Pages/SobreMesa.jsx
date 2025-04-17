@@ -7,14 +7,14 @@ const sobremesasData = [
     title: 'Mochi com Sorvete',
     description: 'Tradicional doce japonês com recheio gelado, macio e refrescante.',
     price: 'R$ 14,90',
-    image: '/images/mochi.jpg',
+    image: '/Imagem/Mochi.jpeg',
   },
   {
     id: 2,
     title: 'Dorayaki',
     description: 'Panqueca japonesa recheada com doce de feijão azuki (anko).',
     price: 'R$ 11,90',
-    image: '/images/dorayaki.jpg',
+    image: '/Images/Dorayaki.jpg',
   },
   {
     id: 3,
