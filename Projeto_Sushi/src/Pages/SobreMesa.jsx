@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import NavBar from '../Components/NavBar';
 import Mochi from '../assets/Mochi.png'
+import Dorayaki from '../assets/Dorayaki.png'
 
 const sobremesasData = [
   {
@@ -8,20 +9,18 @@ const sobremesasData = [
     title: 'Mochi com Sorvete',
     description: 'Tradicional doce japonês com recheio gelado, macio e refrescante.',
     price: 'R$ 14,90',
-<<<<<<< HEAD
     image: [
       Mochi
     ]
-=======
-    image: '/Imagem/Mochi.jpeg',
->>>>>>> 090473200fb19fe7cfe38bf365bc10701656f063
   },
   {
     id: 2,
     title: 'Dorayaki',
     description: 'Panqueca japonesa recheada com doce de feijão azuki (anko).',
     price: 'R$ 11,90',
-    image: '/Images/Dorayaki.jpg',
+    image: [
+      Dorayaki
+    ]
   },
   {
     id: 3,
