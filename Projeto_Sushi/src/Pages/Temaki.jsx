@@ -3,7 +3,7 @@ import NavBar from "../Components/NavBar";
 import Footer from "../Components/Footer";
 import Frito from '../assets/Frito.png';
 import Atum from '../assets/Atum.png'
-import Salmao from '../assets/Salmão.png'
+import Salmão from '../assets/Salmão.png'
 import Skin from '../assets/Skin.png'
 
 const adicionaisData = [
@@ -13,7 +13,7 @@ const adicionaisData = [
     description: 'Clássico e irresistível! Feito com salmão fresco, arroz temperado, cream cheese e cebolinha, envolto em alga crocante.',
     price: 'R$ 26,90',
     image: [
-      Salmao
+      Salmão
     ]
   },
   {
