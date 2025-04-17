@@ -1,9 +1,8 @@
-// import './Navbar.css';
 
 
 function Nav() {
   return (
-    <nav>
+    <nav className="navbar">
       <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/temaki">Temaki</a></li>
