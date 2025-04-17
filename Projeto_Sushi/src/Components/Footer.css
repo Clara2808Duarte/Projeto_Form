@@ -1,0 +1,12 @@
+.footer {
+    background-color: #fa8072; /* Fundo salmão para combinar com o tema */
+    width: 179.4vh;
+    margin-left: -30%;
+    text-align: center; /* Centraliza o texto */
+    padding: 1rem; /* Espaçamento interno para conforto visual */
+    font-weight: bold; /* Texto em negrito para destaque */
+    color: #fff; /* Texto branco para contraste */
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.6); /* Sombra para cima, dando destaque */
+    position: relative; /* Permite que o footer fique onde o conteúdo termina */
+  }
+  
