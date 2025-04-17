@@ -1,111 +1,138 @@
+
+
+/* Resetando margens e fontes padrão para todo o body */
 body {
-  margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #0e0e0e;
-  color: #f9f9f9;
+  margin: 0; /* Remove margens padrão do navegador */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte limpa e moderna */
+  background-color: #0e0e0e; /* Fundo escuro para a página */
+  color: #f9f9f9; /* Cor clara para o texto */
 }
 
+/* ===================== */
+/* NAVBAR (MENU FIXO)    */
+/* ===================== */
+
+/* Estiliza a barra de navegação no topo da página */
 .navbar {
-  background: linear-gradient(90deg, #fa8072, #fa8072);
-  padding: 1rem;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.6);
+  background: linear-gradient(90deg, #fa8072, #fa8072); /* Gradiente (mesma cor nas pontas) */
+  padding: 1rem; /* Espaço interno nos quatro lados */
+  display: flex; /* Usa flexbox para layout horizontal */
+  justify-content: space-around; /* Espaça igualmente os itens */
+  align-items: center; /* Alinha verticalmente ao centro */
+  width: 100%; /* Ocupa toda a largura da tela */
+  position: fixed; /* Fixa no topo da tela ao rolar */
+  top: 0; /* Alinha ao topo da página */
+  left: 0; /* Alinha à esquerda */
+  z-index: 1000; /* Fica acima de todos os outros elementos */
+  box-shadow: 0 2px 10px rgba(0,0,0,0.6); /* Sombra abaixo da navbar */
 }
 
+/* Estiliza os links dentro da navbar */
 .navbar a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  transition: background 0.3s;
+  color: white; /* Cor branca para os links */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Texto em negrito */
+  padding: 0.5rem 1rem; /* Espaço ao redor dos links */
+  border-radius: 8px; /* Cantos arredondados */
+  transition: background 0.3s; /* Animação suave ao passar o mouse */
 }
 
+/* Estiliza o hover nos links da navbar */
 .navbar a:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.2); /* Fundo escuro semi-transparente ao passar o mouse */
 }
 
-.footer {
-  background-color: #1e5491;
-  text-align: center;
-  padding: 1rem;
-  font-weight: bold;
-  color: #fff;
-  box-shadow: 0 -2px 10px rgba(0,0,0,0.6);
+/* Define a lista de links como horizontal */
+.navbar ul {
+  display: flex; /* Coloca os itens em linha */
+  margin: 0; /* Remove margem padrão */
+  padding: 0; /* Remove espaçamento interno */
+  list-style: none; /* Remove marcadores de lista */
 }
 
+/* Define espaçamento entre os itens da lista */
+.navbar ul li {
+  margin: 0 10px; /* Espaço horizontal entre os itens */
+}
+
+/* ===================== */
+/* CONTAINER PRINCIPAL   */
+/* ===================== */
+
+/* Estilo do conteúdo principal da página */
 .container {
-  padding: 2rem;
-  max-width: 700px;
-  margin: 2rem auto;
-  background-color: #1a1a1a;
-  border-radius: 20px;
-  box-shadow: 0 0 20px #fa8072;
+  padding: 2rem; /* Espaço interno */
+  max-width: 700px; /* Largura máxima para leitura confortável */
+  margin: 120px auto 100px; /* Espaço entre navbar e footer */
+  background-color: #1a1a1a; /* Fundo escuro para contraste */
+  border-radius: 20px; /* Bordas arredondadas */
+  box-shadow: 0 0 20px #fa8072; /* Brilho em volta do container */
 }
 
+/* Estilo para os títulos dentro do container */
 .container h1, .container h2 {
-  color: #fa8072;
-  text-align: center;
-  margin-bottom: 1rem;
+  color: #fa8072; /* Cor salmão vibrante */
+  text-align: center; /* Centraliza os títulos */
+  margin-bottom: 1rem; /* Espaço abaixo dos títulos */
 }
 
+/* ===================== */
+/* FORMULÁRIO            */
+/* ===================== */
+
+/* Estilo para os rótulos e fieldsets */
 .formulario label,
 .formulario fieldset {
-  display: block;
-  margin-bottom: 1rem;
-  text-align: left;
+  display: block; /* Ocupa toda a linha */
+  margin-bottom: 1rem; /* Espaço entre os campos */
+  text-align: left; /* Alinha os textos à esquerda */
 }
 
+/* Campos de entrada de texto e email */
 .formulario input[type="text"],
 .formulario input[type="email"] {
-  width: 100%;
-  padding: 0.6rem;
-  border-radius: 10px;
-  border: 1px solid #1e5491;
-  margin-top: 0.25rem;
-  background-color: #2c2c2c;
-  color: #fff;
+  width: 100%; /* Ocupa toda a largura disponível */
+  padding: 0.6rem; /* Espaço interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  border: 1px solid #fa8072; /* Borda salmão */
+  margin-top: 0.25rem; /* Pequeno espaço acima do campo */
+  background-color: #2c2c2c; /* Fundo escuro para o input */
+  color: #fff; /* Texto branco */
 }
 
+/* Estilo para o fieldset */
 .formulario fieldset {
-  border: 2px solid #1e5491;
-  padding: 1rem;
-  border-radius: 10px;
-  background-color: #141414;
+  border: 2px solid #fa8072; /* Borda salmão */
+  padding: 1rem; /* Espaço interno */
+  border-radius: 10px; /* Bordas arredondadas */
+  background-color: #141414; /* Fundo mais escuro */
 }
 
+/* Estilo para a legenda do fieldset */
 .formulario legend {
-  font-weight: bold;
-  color: #00ccff;
-  font-size: 1.1rem;
+  font-weight: bold; /* Texto em negrito */
+  color: #fa8072; /* Cor salmão */
+  font-size: 1.1rem; /* Tamanho levemente maior */
 }
 
+/* Estilo para os botões de rádio */
 .formulario input[type="radio"] {
-  margin-right: 0.5rem;
-  accent-color: #fa8072;
+  margin-right: 0.5rem; /* Espaço à direita do botão */
+  accent-color: #fa8072; /* Cor salmão personalizada */
 }
 
-.telefone {
-  margin: 1rem 0;
-  font-weight: bold;
-  color: #00ccff;
-}
 
-.btn-enviar {
-  margin-top: 1rem;
-  padding: 0.75rem 1.5rem;
-  background-color: #fa8072;
-  border: none;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-  border-radius: 30px;
-  transition: background-color 0.3s ease;
-  font-size: 1rem;
-}
 
-.btn-enviar:hover {
-  background-color:#fa8072;
+
+.footer {
+  width: 100%; /* Garante que o footer ocupe toda a largura da tela */
+  background-color: #fa8072; /* Fundo salmão para combinar com o tema */
+  text-align: center; /* Centraliza o texto */
+  padding: 1rem; /* Espaçamento interno para conforto visual */
+  font-weight: bold; /* Texto em negrito para destaque */
+  color: #fff; /* Texto branco para contraste */
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.6); /* Sombra para cima, dando destaque */
+  position: relative; /* Permite que o footer fique onde o conteúdo termina */
+  bottom: 0; /* Sem efeito visual aqui, só por clareza */
+  left: 0; /* Alinha à esquerda da tela */
 }
