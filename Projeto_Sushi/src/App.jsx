@@ -5,6 +5,9 @@ import SobreMesa from './Pages/SobreMesa';
 import ItensAdiconais from './Pages/ItensAdicionais';
 import Combo from './Pages/Combo';
 import Promocoes from './Pages/Promocoes'
+import Finalizar from './Pages/FormularioFinal'
+import "./App.css"
+
 
 function App() {
   return (
@@ -12,10 +15,12 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Temaki" element={<Temaki />} />
-        <Route path="/SobreMesa" element={<SobreMesa />} />
-        <Route path="/ItensAdicionais" element={<ItensAdiconais />} />
-        <Route path="/Combo" element={<Combo />} />
+        <Route path="/Sobremesas" element={<SobreMesa />} />
+        <Route path="/Adicionais" element={<ItensAdiconais />} />
+        <Route path="/Sushi" element={<Combo />} />
         <Route path="/Promocoes" element={<Promocoes />} />
+        <Route path="/Finalizar" element={<Finalizar />} />
+
       </Routes>
     </Router>
   );

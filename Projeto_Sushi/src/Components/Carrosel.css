@@ -1,0 +1,51 @@
+/* Contêiner principal do carrossel */
+.carousel {
+    position: relative;
+    top: 20px;
+    width: 70%;
+    max-width: 100%; /* O carrossel vai ocupar 100% da largura disponível */
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Contêiner das imagens */
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Suaviza o movimento das imagens */
+    width: 70%; /* A largura vai ocupar 100% da tela */
+  }
+  
+  /* Estilo das imagens dentro do carrossel */
+  .slides img {
+    width: 70vw; /* A largura das imagens será ajustada para 100% do carrossel */
+    height: 50vh; /* Mantém a proporção das imagens retangulares */
+    object-fit: cover; /* Faz com que a imagem cubra toda a área sem distorcer */
+  }
+  
+  /* Botões de navegação */
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fa8072; /* Cor de fundo semitransparente */
+    color: black;
+    font-size: 10px; /* Aumenta o tamanho da fonte */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: black; /* Efeito de hover */
+    color: #fa8072;
+  }
+  
+  .prev {
+    left: 10px;
+  }
+  
+  .next {
+    right: 10px;
+  }

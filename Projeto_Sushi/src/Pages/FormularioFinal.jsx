@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Navbar from "./Components/NavBar";
-import Footer from "./Components/Footer";
+import { useState } from "react";
+import Navbar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 export default function FormularioFinal() {
   const [form, setForm] = useState({});
@@ -51,9 +51,13 @@ export default function FormularioFinal() {
 
           <fieldset>
             <legend>Escolha suas opções:</legend>
-            <label><input type="radio" name="opcao" value="Temaki" onChange={handleChange} /> Temaki</label>
-            <label><input type="radio" name="opcao" value="Hotholl" onChange={handleChange} /> Hotholl</label>
-            <label><input type="radio" name="opcao" value="Combinado" onChange={handleChange} /> Combinado</label>
+            <label><input type="radio" name="opcao" value="Temakis" onChange={handleChange} /> Temaki</label>
+            <label><input type="radio" name="opcao" value="Combo e Combinado" onChange={handleChange} /> Combo e Combinado</label>
+            <label><input type="radio" name="opcao" value="Itens Adicionais" onChange={handleChange} />Itens Adicionais</label>
+            <label><input type="radio" name="opcao" value="Sobremesas" onChange={handleChange} /> Sobremesas</label>
+            <label><input type="radio" name="opcao" value="Promoções" onChange={handleChange} /> Promoções</label>
+
+
           </fieldset>
 
           {erro && <p className="erro">{erro}</p>}

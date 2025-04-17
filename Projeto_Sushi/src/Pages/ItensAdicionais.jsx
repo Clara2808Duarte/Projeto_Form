@@ -1,4 +1,5 @@
 import Navbar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 function Itens() {
   return (
@@ -8,7 +9,9 @@ function Itens() {
         <h2> ITENS ADICIONAIS </h2>
         <p>O hotholl é um sushi empanado e frito, crocante por fora e recheado com arroz, peixe e cream cheese.</p>
       </div>
+      <Footer />
     </div>
+    
   );
 }
 export default Itens;

@@ -1,0 +1,41 @@
+
+  section {
+    padding: 2rem;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  h3 {
+    color: #fa8072;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  .Img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .Img:hover {
+    transform: scale(1.05);
+  }
+  
+  div {
+    margin: 2rem auto;
+    max-width: 900px;
+    padding: 1rem;
+  }
+   
+  a {
+    display: block;
+    text-align: center;
+  }
+  
+
+  
