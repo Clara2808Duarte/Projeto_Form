@@ -33,10 +33,10 @@ function Carrosel() {
 
   // Efeito colateral para atualizar o slide automaticamente a cada 5 segundos
   useEffect(() => {
-    // Define um intervalo que chama a função moveSlide a cada 5000 milissegundos (5 segundos)
+    // Define um intervalo que chama a função moveSlide a cada 3000 milissegundos (3 segundos)
     const intervalId = setInterval(() => {
       moveSlide(1);
-    }, 5000);
+    }, 3000);
 
     // Retorna uma função de limpeza que limpa o intervalo quando o componente é desmontado
     return () => clearInterval(intervalId); 
