@@ -59,7 +59,7 @@ function ItensAdicionais() {
     <>
     <div className="promo-container">
       <NavBar />
-      <h1>TEKAMIS</h1>
+      <h1>TEMAKIS</h1>
       <p className="sub">Temakis fresquinhos que deixam cada mordida ainda mais especial!</p>
 
       <div className="promo-grid">
