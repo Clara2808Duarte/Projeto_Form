@@ -62,7 +62,7 @@ export default function FormularioFinal() {
 
           {erro && <p className="erro">{erro}</p>}
 
-          <button type="submit" className="btn-enviar">Enviar</button>
+          <button type="submit" className="botao-enviar2">Enviar</button>
         </form>
       </div>
       <Footer />
