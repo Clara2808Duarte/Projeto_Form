@@ -3,6 +3,7 @@ import Temaki from "../assets/Temaki.jpeg";
 import SobreMesa from "../assets/Doces.png";
 import ItensAdicionais from "../assets/itens.jpg";
 import Nav from "../Components/NavBar"
+import './Home.css';
 
 function Home() {
   return (
@@ -28,7 +29,7 @@ function Home() {
       <br />
       <div >
         <div>
-          <h6> Temaki </h6>
+          <h3> Temaki </h3>
           <p>
             O temaki é um dos queridinhos da culinária japonesa. Feito com uma
             alga crocante em formato de cone, ele é recheado com arroz temperado
@@ -44,7 +45,7 @@ function Home() {
         </div>
 
         <div>
-          <h6> Sobremesas </h6>
+          <h3> Sobremesas </h3>
           <p>
             As sobremesas japonesas encantam pelo equilíbrio e suavidade.
             Diferente dos doces ocidentais, elas prezam por sabores sutis e
@@ -61,7 +62,7 @@ function Home() {
         </div>
 
         <div>
-          <h6> Itens Adicionais </h6>
+          <h3> Itens Adicionais </h3>
           <p>
             Além dos pratos principais, os itens adicionais de um restaurante
             japonês enriquecem a refeição com sabores autênticos. Entradas como
