@@ -51,9 +51,13 @@ export default function FormularioFinal() {
 
           <fieldset>
             <legend>Escolha suas opções:</legend>
-            <label><input type="radio" name="opcao" value="Temaki" onChange={handleChange} /> Temaki</label>
-            <label><input type="radio" name="opcao" value="Hotholl" onChange={handleChange} /> Hotholl</label>
-            <label><input type="radio" name="opcao" value="Combinado" onChange={handleChange} /> Combinado</label>
+            <label><input type="radio" name="opcao" value="Temakis" onChange={handleChange} /> Temaki</label>
+            <label><input type="radio" name="opcao" value="Combo e Combinado" onChange={handleChange} /> Hotholl</label>
+            <label><input type="radio" name="opcao" value="Itens Adicionais" onChange={handleChange} /> Combinado</label>
+            <label><input type="radio" name="opcao" value="Sobremesas" onChange={handleChange} /> Combinado</label>
+            <label><input type="radio" name="opcao" value="Itens Adicionais" onChange={handleChange} /> Combinado</label>
+
+
           </fieldset>
 
           {erro && <p className="erro">{erro}</p>}
