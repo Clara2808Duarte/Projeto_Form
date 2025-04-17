@@ -1,19 +1,20 @@
 .promo-container {
     font-family: 'Segoe UI', sans-serif;
     padding: 2rem;
-    background-color: #fff8f0;
+    background-color: #fa8072;
     text-align: center;
   }
   
   .promo-container h1 {
     font-size: 2.5rem;
-    color: #e63946;
+    color: #0b0b0b;
     margin-bottom: 0.3rem;
   }
   
   .sub {
-    font-size: 1.2rem;
-    color: #555;
+    font-size: 1.2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #500707f1;
     margin-bottom: 2rem;
   }
   
@@ -25,9 +26,10 @@
   }
   
   .promo-card {
-    background: #ffffff;
+    background: #f4cfc0;
+    width: 20vw;
     border-radius: 12px;
-    box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    box-shadow: 30px 30px 30px rgba(0,0,0,0.1);
     padding: 1.5rem;
     max-width: 320px;
     transition: transform 0.3s ease;
@@ -87,6 +89,11 @@
   }
   
   button:hover {
-    background-color: #d62839;
+    background-color: #b6202f;
   }
   
+  h1 {
+    color: whitesmoke;
+    font-family:'Times New Roman', Times, serif;
+    
+  }

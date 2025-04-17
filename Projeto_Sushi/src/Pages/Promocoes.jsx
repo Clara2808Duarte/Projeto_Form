@@ -1,31 +1,50 @@
 import NavBar from '../Components/NavBar'
 import React, { useEffect, useState } from 'react';
 import './Promocoes.css';
+import Barca from '../assets/Barca_Img.png'
+import Temaki from '../assets/Tekmaki_Img.png'
+import Combo from '../assets/Combo_Img.png'
+import ComboP from '../assets/ComboPremium_Img.png'
 
 
-<NavBar />
+
 const promoData = [
   {
     id: 1,
     title: 'Combo Clássico',
     description: '10 sashimis, 8 uramakis, 1 temaki de salmão',
     price: 'R$ 59,90',
-    image: '/images/combo-classico.jpg',
+    image: [
+        Combo
+    ]
   },
   {
     id: 2,
     title: 'Temaki Lovers',
     description: '3 temakis à sua escolha',
     price: 'R$ 39,90',
-    image: '/images/temaki-lovers.jpg',
+    image: [
+        Temaki
+    ]
   },
   {
     id: 3,
     title: 'Combo Premium',
     description: '20 peças variadas + 2 temakis + 2 refrigerantes',
     price: 'R$ 89,90',
-    image: '/images/combo-premium.jpg',
+    image: [
+        ComboP
+    ]
   },
+  {
+    id: 4,
+    title: 'Barca Irresistível',
+    description: '80 peças variadas',
+    price: 'R$ 137,50',
+    image: [
+        Barca
+    ]
+  }
 ];
 
 function PromoSushi() {
@@ -40,9 +59,13 @@ function PromoSushi() {
 
   return (
     <div className="promo-container">
-      <h1>🍣 Promoções Especiais</h1>
+      <h1>🍣 PROMOÇÕES ESPECIAIS</h1>
       <p className="sub">Combos irresistíveis de sushi e temaki pra você!</p>
 
+      <br/>
+      <br/>
+      <br/>
+      
       <div className="promo-grid">
         {combos.map(combo => (
           <div key={combo.id} className="promo-card">
