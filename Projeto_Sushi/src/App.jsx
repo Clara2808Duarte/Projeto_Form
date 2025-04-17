@@ -3,6 +3,7 @@ import Home from './Pages/Home';
 import Temaki from './Pages/Temaki';
 import SobreMesa from './Pages/SobreMesa';
 import ItensAdiconais from './Pages/ItensAdicionais';
+import Combo from './Pages/Combo';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <Route path="/Temaki" element={<Temaki />} />
         <Route path="/SobreMesa" element={<SobreMesa />} />
         <Route path="/ItensAdicionais" element={<ItensAdiconais />} />
+        <Route path="/Combo" element={<Combo />} />
       </Routes>
     </Router>
   );
