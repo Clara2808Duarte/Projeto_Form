@@ -5,7 +5,7 @@ import Barca from '../assets/Barca_Img.png'
 import Temaki from '../assets/Tekmaki_Img.png'
 import Combo from '../assets/Combo_Img.png'
 import ComboP from '../assets/ComboPremium_Img.png'
-
+import Footer from '../Components/Footer'
 
 
 const promoData = [
@@ -57,15 +57,12 @@ function PromoSushi() {
     }, 500);
   }, []);
 
-  return (
+        return (
     <div className="promo-container">
+         <NavBar />
       <h1>🍣 PROMOÇÕES ESPECIAIS</h1>
       <p className="sub">Combos irresistíveis de sushi e temaki pra você!</p>
 
-      <br/>
-      <br/>
-      <br/>
-      
       <div className="promo-grid">
         {combos.map(combo => (
           <div key={combo.id} className="promo-card">
@@ -75,10 +72,11 @@ function PromoSushi() {
             <h2>{combo.title}</h2>
             <p>{combo.description}</p>
             <span className="price">{combo.price}</span>
-            <button>Quero esse! 🍱</button>
+            <button className="botao"> Clique Aqui </button>
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 }

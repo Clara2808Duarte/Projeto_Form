@@ -3,6 +3,8 @@
     padding: 2rem;
     background-color: #fa8072;
     text-align: center;
+    display: flex;
+    flex-direction: column;
   }
   
   .promo-container h1 {
@@ -28,6 +30,7 @@
   .promo-card {
     background: #f4cfc0;
     width: 20vw;
+    height: 90vh;
     border-radius: 12px;
     box-shadow: 30px 30px 30px rgba(0,0,0,0.1);
     padding: 1.5rem;
@@ -77,7 +80,7 @@
     margin-bottom: 1rem;
   }
   
-  button {
+  botao {
     background-color: #e63946;
     color: white;
     border: none;
@@ -86,9 +89,10 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+
   }
   
-  button:hover {
+  botao:hover {
     background-color: #b6202f;
   }
   
