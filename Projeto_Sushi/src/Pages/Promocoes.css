@@ -80,7 +80,7 @@
     margin-bottom: 1rem;
   }
   
-  botao {
+  .botao {
     background-color: #e63946;
     color: white;
     border: none;
@@ -89,10 +89,10 @@
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-
+    margin-top: 200%;
   }
   
-  botao:hover {
+  .botao:hover {
     background-color: #b6202f;
   }
   

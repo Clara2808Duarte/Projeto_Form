@@ -1,16 +1,67 @@
-import Navbar from "../Components/NavBar";
-import Footer from "../Components/Footer";
-
-function Combo() {
-    return (
-      <div>
-        <Navbar />
-        <div className="container">
-          <h2> COMBOS E COMBINADOS </h2>
-          <p>O hotholl é um sushi empanado e frito, crocante por fora e recheado com arroz, peixe e cream cheese.</p>
-        </div>
-        <Footer/>
-      </div>
-    );
+import { useEffect, useState } from 'react';
+import NavBar from '../Components/NavBar';
+const combosData = [
+  {
+    id: 1,
+    title: 'Combo Samurai',
+    description: '8 hot rolls, 8 nigiris de salmão e 1 temaki de camarão crocante.',
+    price: 'R$ 72,90',
+    image: '/images/combo-samurai.jpg',
+  },
+  {
+    id: 2,
+    title: 'Combo Fuji',
+    description: '16 peças variadas: uramaki, hossomaki, joy e 2 sashimis especiais.',
+    price: 'R$ 68,90',
+    image: '/images/combo-fuji.jpg',
+  },
+  {
+    id: 3,
+    title: 'Combo Especial do Chef',
+    description: '30 peças selecionadas pelo chef com ingredientes premium.',
+    price: 'R$ 99,90',
+    image: '/images/combo-chef.jpg',
+  },
+  {
+    id: 4,
+    title: 'Combo Zen',
+    description: 'Opção leve e vegana com 12 peças e 1 temaki de manga com tofu.',
+    price: 'R$ 52,90',
+    image: '/images/combo-zen.jpg',
   }
-  export default Combo;
+];
+
+
+function CombosSushi() {
+  const [combos, setCombos] = useState([]);
+
+  useEffect(() => {
+    // Simula carregamento de dados
+    setTimeout(() => {
+      setCombos(combosData);
+    }, 500);
+  }, []);
+
+  return (
+    <div className="promo-container">
+      <NavBar />
+      <h1>Combos de Sushi</h1>
+      <p className="sub">Combinações especiais para quem ama variedade e sabor!</p>
+
+      <div className="promo-grid">
+        {combos.map(item => (
+          <div key={item.id} className="promo-card">
+            <div className="image-wrapper">
+              <img src={item.image} alt={item.title} />
+            </div>
+            <h2>{item.title}</h2>
+            <p>{item.description}</p>
+            <span className="price">{item.price}</span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+export default CombosSushi;
