@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import NavBar from '../Components/NavBar';
+import Mochi from '../assets/Mochi.png'
 
 const sobremesasData = [
   {
@@ -7,7 +8,9 @@ const sobremesasData = [
     title: 'Mochi com Sorvete',
     description: 'Tradicional doce japonês com recheio gelado, macio e refrescante.',
     price: 'R$ 14,90',
-    image: '/images/mochi.jpg',
+    image: [
+      Mochi
+    ]
   },
   {
     id: 2,
