@@ -1,33 +1,47 @@
 import { useEffect, useState } from 'react';
 import NavBar from '../Components/NavBar';
+import Combo1 from '../assets/Combo1.png'
+import Combo2 from '../assets/Combo2.png'
+import Combo3 from '../assets/Combo3.png'
+import Combo4 from '../assets/Combo4.png'
+
+
 const combosData = [
   {
     id: 1,
     title: 'Combo Samurai',
     description: '8 hot rolls, 8 nigiris de salmão e 1 temaki de camarão crocante.',
     price: 'R$ 72,90',
-    image: '/images/combo-samurai.jpg',
+    image: [
+      Combo1
+    ]
   },
   {
     id: 2,
     title: 'Combo Fuji',
     description: '16 peças variadas: uramaki, hossomaki, joy e 2 sashimis especiais.',
     price: 'R$ 68,90',
-    image: '/images/combo-fuji.jpg',
+    image: [
+      Combo2
+    ]
   },
   {
     id: 3,
     title: 'Combo Especial do Chef',
     description: '30 peças selecionadas pelo chef com ingredientes premium.',
     price: 'R$ 99,90',
-    image: '/images/combo-chef.jpg',
+    image: [
+      Combo3
+    ]
   },
   {
     id: 4,
     title: 'Combo Zen',
     description: 'Opção leve e vegana com 12 peças e 1 temaki de manga com tofu.',
     price: 'R$ 52,90',
-    image: '/images/combo-zen.jpg',
+    image: [
+      Combo4
+    ]
   }
 ];
 
