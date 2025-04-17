@@ -1,6 +1,6 @@
-import React, { useState } from "react";
-import Navbar from "./Components/NavBar";
-import Footer from "./Components/Footer";
+import { useState } from "react";
+import Navbar from "../Components/NavBar";
+import Footer from "../Components/Footer";
 
 export default function FormularioFinal() {
   const [form, setForm] = useState({});
