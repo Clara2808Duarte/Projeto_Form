@@ -4,6 +4,7 @@ import Combo1 from '../assets/Combo1.png'
 import Combo2 from '../assets/Combo2.png'
 import Combo3 from '../assets/Combo3.png'
 import Combo4 from '../assets/Combo4.png'
+import Footer from '../Components/Footer'
 
 
 const combosData = [
@@ -47,19 +48,24 @@ const combosData = [
 
 
 function CombosSushi() {
+   // Declara um estado chamado 'combos' e a função 'setCombos' para atualizá-lo
+  // Inicialmente, 'combos' é um array vazio
   const [combos, setCombos] = useState([]);
-
+  
+  // O useEffect será executado quando o componente for montado (apenas uma vez)
   useEffect(() => {
-    // Simula carregamento de dados
+    // Simula o carregamento de dados de maneira assíncrona usando 'setTimeout'
     setTimeout(() => {
+      // Após 500ms, os dados simulados (combosData) são passados para o estado 'combos'
       setCombos(combosData);
-    }, 500);
-  }, []);
+    }, 500);  // Delay de 500ms
+  }, []); // O array vazio indica que esse efeito será executado apenas uma vez, na primeira renderização
 
   return (
+    <>
     <div className="promo-container">
       <NavBar />
-      <h1>Combos de Sushi</h1>
+      <h1>COMBOS DE SUSHI</h1>
       <p className="sub">Combinações especiais para quem ama variedade e sabor!</p>
 
       <div className="promo-grid">
@@ -75,6 +81,8 @@ function CombosSushi() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 

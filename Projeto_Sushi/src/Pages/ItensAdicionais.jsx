@@ -1,5 +1,10 @@
 import { useEffect, useState } from 'react';
 import NavBar from '../Components/NavBar';
+import Joy from '../assets/Joy.png'
+import Edamame from '../assets/Edamame.png'
+import Sunomono from '../assets/Sunomono.png'
+import Missoshiru from '../assets/Missoshiru.png'
+import Footer from '../Components/Footer'
 
 const adicionaisData = [
   {
@@ -7,45 +12,56 @@ const adicionaisData = [
     title: 'Joy de Salmão',
     description: 'Base de arroz envolta em salmão com cobertura de cream cheese e cebolinha.',
     price: 'R$ 8,90',
-    image: '/images/joy.jpg',
+    image: [
+      Joy
+    ]
   },
   {
     id: 2,
     title: 'Edamame',
     description: 'Soja verde cozida e levemente salgada, perfeita como entrada.',
     price: 'R$ 10,90',
-    image: '/images/edamame.jpg',
+    image: [
+      Edamame
+    ]
   },
   {
     id: 3,
     title: 'Sunomono',
     description: 'Refrescante salada agridoce de pepino com gergelim.',
     price: 'R$ 9,90',
-    image: '/images/sunomono.jpg',
+    image: [
+      Sunomono
+    ]
   },
   {
     id: 4,
     title: 'Missoshiru',
     description: 'Sopa de missô com tofu, cebolinha e algas.',
     price: 'R$ 7,90',
-    image: '/images/missoshiru.jpg',
+    image: [
+      Missoshiru
+    ]
   }
 ];
 
 function ItensAdicionais() {
   const [itens, setItens] = useState([]);
 
+  // O useEffect será executado quando o componente for montado (apenas uma vez)
   useEffect(() => {
-    // Simula carregamento de dados
+    // Simula o carregamento de dados de maneira assíncrona usando 'setTimeout'
     setTimeout(() => {
+      // Após 500ms, os dados simulados (combosData) são passados para o estado 'combos'
       setItens(adicionaisData);
-    }, 500);
-  }, []);
+    }, 500);  // Delay de 500ms
+  }, []); // O array vazio indica que esse efeito será executado apenas uma vez, na primeira renderização
 
   return (
+    <>
     <div className="promo-container">
       <NavBar />
-      <h1>Itens Adicionais</h1>
+      <h1>ITENS ADICIONAIS</h1>
       <p className="sub">Complementos que tornam sua experiência ainda mais completa!</p>
 
       <div className="promo-grid">
@@ -61,6 +77,8 @@ function ItensAdicionais() {
         ))}
       </div>
     </div>
+    <Footer/>
+    </>
   );
 }
 
