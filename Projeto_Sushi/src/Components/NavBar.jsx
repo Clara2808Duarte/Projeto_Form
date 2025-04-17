@@ -10,6 +10,7 @@ function Nav() {
         <li><a href="/sushi">Combo e Combinados</a></li>
         <li><a href="/Adicionais">Adicionais</a></li>
         <li><a href="/Sobremesas">Sobremesas</a></li>
+        <li><a href="/Promocoes">Promoções</a></li>
       </ul>
     </nav>
   );
