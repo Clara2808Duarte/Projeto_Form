@@ -57,7 +57,7 @@ function Sobremesas() {
   return (
     <div className="promo-container">
       <NavBar />
-      <h1>Sobremesas Japonesas</h1>
+      <h1>SOBREMESAS JAPONESAS</h1>
       <p className="sub">Delícias doces para fechar sua refeição com chave de ouro!</p>
 
       <div className="promo-grid">
