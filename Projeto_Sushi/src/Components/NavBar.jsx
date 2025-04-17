@@ -10,6 +10,7 @@ function Nav() {
         <li><a href="/Adicionais">Adicionais</a></li>
         <li><a href="/Sobremesas">Sobremesas</a></li>
         <li><a href="/Promocoes">Promoções</a></li>
+        <li><a href="/Finalizar">Finalizar pedido</a></li>
       </ul>
     </nav>
   );
