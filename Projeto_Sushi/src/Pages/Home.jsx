@@ -1,14 +1,13 @@
 import Nav from "../Components/Navbar";
 import Footer from "../Components/Footer";
 import Temaki from "../assets/Temaki.jpeg";
-import SobreMesa from "../assets/Doce.jpeg";
-import ItensAdicionais from "../assets/itens.jpeg";
+import SobreMesa from "../assets/Doces.png";
+import ItensAdicionais from "../assets/itens.jpg";
 
 function Home() {
   return (
     <>
       <section>
-        <Header titulo="URBAN SUSHI" />
         <Nav />
       </section>
       <Carrosel />
